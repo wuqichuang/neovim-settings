@@ -122,7 +122,6 @@ map("n", "zz", ":foldclose<CR>", opt)
 map("n", "Z", ":foldopen<CR>", opt)
 
 -- nvim-tree
-map("n", "<A-m>", ":NvimTreeToggle<CR>", opt)
 map("n", "<leader>m", ":NvimTreeToggle<CR>", opt)
 -- 列表快捷键
 pluginKeys.nvimTreeList = { -- 打开文件或文件夹
@@ -160,7 +159,6 @@ map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
 -- "moll/vim-bbye" 关闭当前 buffer
 map("n", "<leader>bc", ":Bdelete!<CR>", opt)
-map("n", "<C-w>", ":Bdelete!<CR>", opt)
 -- 关闭左/右侧标签页
 map("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opt)
 map("n", "<leader>bl", ":BufferLineCloseRight<CR>", opt)
@@ -170,8 +168,11 @@ map("n", "<leader>bo", ":BufferLineCloseRight<CR>:BufferLineCloseLeft<CR>", opt)
 map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
 
 -- Telescope
-map("n", "<C-p>", ":Telescope find_files<CR>", opt)
-map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
+map("n", "<leader>ff", ":Telescope find_files<CR>", opt)
+map("n", "<leader>fg", ":Telescope live_grep<CR>", opt)
+map("n", "<leader>fm", ":Telescope marks<CR>", opt)
+map("n", "<leader>fj", ":Telescope jumplist<CR>", opt)
+
 -- Telescope 列表中 插入模式快捷键
 pluginKeys.telescopeList = {
   i = {
