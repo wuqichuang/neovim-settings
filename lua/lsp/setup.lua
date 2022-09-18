@@ -21,6 +21,10 @@ require("mason-lspconfig").setup({
       "tsserver",
       "yamlls",
       "codelldb",
+      "clangd",
+      "gopls",
+      "eslint",
+      "volar",
     }
 })
 
