@@ -25,8 +25,8 @@ map("n", "$", "g_", opt)
 map("n", "g_", "$", opt)
 
 -- 命令行下 Ctrl+j/k  上一个下一个
-map("c", "<C-j>", "<C-n>", { noremap = false })
-map("c", "<C-k>", "<C-p>", { noremap = false })
+map("c", "<C-j>", "<tab><tab><tab><tab><tab>", { noremap = false })
+map("c", "<C-k>", "<S-tab><S-tab><S-tab><S-tab><S-tab>", { noremap = false })
 
 map("n", "<leader>w", ":w<CR>", opt)
 map("n", "<leader>wq", ":wqa!<CR>", opt)
