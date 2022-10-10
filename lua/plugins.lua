@@ -69,6 +69,8 @@ packer.startup({
       "nvim-treesitter/nvim-treesitter",
       run = ":TSUpdate",
     })
+    use( "nvim-treesitter/nvim-treesitter-textobjects")
+
     use("p00f/nvim-ts-rainbow")
     -- indent-blankline
     use("lukas-reineke/indent-blankline.nvim")
@@ -155,7 +157,7 @@ packer.startup({
     -- 锁定插件版本在snapshots目录
     snapshot_path = require("packer.util").join_paths(vim.fn.stdpath("config"), "snapshots"),
     -- 这里锁定插件版本在v1，不会继续更新插件
-    snapshot = "v1",
+    --snapshot = "v1",
 
     -- 最大并发数
     max_jobs = 16,
